@@ -9,14 +9,6 @@ const port = process.env.port || 8080;
 
 configViewEngine(app)
 
-// app.get('/about', (req, res) => {
-//   res.send('Hello World!')
-// })
-  
-// app.get('/', (req, res) => {
-//   res.render('index.ejs')
-// })
-
 initWebRoutes(app)
 
 app.listen(port, () => {

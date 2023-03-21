@@ -1,17 +1,10 @@
 import mysql from 'mysql2'
 
-const connection = mysql.createConnection({
+const pool = mysql.createPool({
     host: 'localhost',
     user: 'root',
-    database: 'quanlykh'
-}) 
+    database: 'quanlykh',
+    // password: ''
+})
 
-connection.query(
-    'SELECT * FROM users',
-    function(err, results, fields) {
-        if (err) console.error('err: ' + err)
-        console.log('results: ', results);
-    }
-)
-
-export default connection
+export default pool
