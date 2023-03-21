@@ -43,3 +43,11 @@ body {
   button {
     cursor: pointer;
   }
+
+  .form-update, .form-delete {
+    display: inline-block;
+  }
+
+  .box-update {
+    text-align: center;
+  }
