@@ -26,3 +26,20 @@ body {
     background-color: #04AA6D;
     color: white;
   } 
+
+  .create-new-user {
+    text-align: center;
+  }
+
+  .title {
+    display: block;
+    margin: 10px 0 4px;
+  }
+  
+  .box-button {
+    margin-top: 10px;
+  }
+
+  button {
+    cursor: pointer;
+  }
