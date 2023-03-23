@@ -1,6 +1,7 @@
 import express from 'express';
 import configViewEngine from './configs/viewEngine';
 import initWebRoutes from './route/web';
+import initAPIRoutes from './route/api';
 import connection from './configs/connectDB'
 import bodyParser from "body-parser";
 
@@ -16,6 +17,7 @@ app.use(bodyParser.json())
 configViewEngine(app)
 
 initWebRoutes(app)
+initAPIRoutes(app)
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)

@@ -14,7 +14,7 @@ const initWebRoutes = (app) => {
     router.get('/update-user/:id', homeController.getUser)
     router.post('/update-user', homeController.updateUser)
 
-    return app.use('/', router)
+    return app.use('/', router) 
 }
 
 export default initWebRoutes

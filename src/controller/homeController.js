@@ -32,7 +32,7 @@ const createNewUser = async (req, res) => {
 
 const deleteUser = async (req, res) => {
   let id = req.body.id;
-  promisePool.execute("DELETE FROM users WHERE id = ?", [id]);
+  await promisePool.execute("DELETE FROM users WHERE id = ?", [id]);
 
   return res.redirect("/");
 };
